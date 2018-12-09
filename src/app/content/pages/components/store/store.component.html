@@ -1,0 +1,67 @@
+<h2>About Your Central Store</h2>
+<m-notice>
+  Store information section comprises the comprehensive information of your business including 
+  'Corporate Address', 'Contact person details' and 'Name of your Store'. The information stored
+  here can be used while configuring different pages of your store like 'Comtact us' and 'About US'.
+  You can also enter bried descriotion of your store here. 	
+</m-notice>
+<!--=========================================form start========================================-->
+<m-portlet [options]="{enableSticky: true}">
+	<!-- use ng-container[mPortletHeadTitle] for the title -->
+	<ng-container mPortletHeadTitle>
+		<div class="m-portlet__head-title">
+			<h3 class="m-portlet__head-text" text-primary>
+				About Your Central Store
+			</h3>
+		</div>
+	</ng-container>
+
+	<!-- use ng-container[mPortletHeadTools] for the top right toolbar content -->
+	
+	<!-- use ng-container[mPortletBody] for the body content -->
+	<ng-container mPortletBody>
+		<form class="m-form m-form--label-align-left- m-form--state-" id="m_form">
+			<!--begin: Form Body -->
+			<div class="m-portlet__body">
+				<div class="row">
+					<div class="col-xl-12">
+						<!-- <div class="m-form__section m-form__section--first"> -->
+							<div class="form-group m-form__group row">
+								<label class="col-xl-2 col-lg-2 col-form-label">*Company/Store Name:</label>
+								<div class="col-xl-10 col-lg-10">
+									<input type="text" name="name" class="form-control m-input" placeholder="" value="Nick Stone">
+									<span class="m-form__help">Please enter your Store name</span>
+								</div>
+							</div>
+							<div class="form-group m-form__group row">
+								<label class="col-xl-2 col-lg-2 col-form-label">CST Number:</label>
+								<div class="col-xl-10 col-lg-10">
+									<input type="email" name="email" class="form-control m-input" placeholder="" value="nick.stone@gmail.com">
+									<!-- <span class="m-form__help">We'll never share your email with anyone else</span> -->
+								</div>
+							</div>
+							<div class="form-group m-form__group row">
+								<label class="col-xl-2 col-lg-3 col-form-label">VAT Number</label>
+								<div class="col-xl-10 col-lg-10">
+									<div class="input-group">
+										<div class="input-group-prepend">
+											<span class="input-group-text">
+												<i class="la la-phone"></i>
+											</span>
+										</div>
+										<input type="text" name="phone" class="form-control m-input" placeholder="" value="1-541-754-3010">
+									</div>
+									<!-- <span class="m-form__help">Enter your valid phone in US phone format. E.g: 1-541-754-3010</span> -->
+								</div>
+							</div>
+						</div>
+					<!-- </div> -->
+				</div>
+			</div>
+		</form>
+	</ng-container>
+</m-portlet>
+<!--=================================================2 form ===============================-->
+<m-blog></m-blog>
+<m-finance-stats></m-finance-stats>
+<m-packages></m-packages>

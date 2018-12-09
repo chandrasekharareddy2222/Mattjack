@@ -1,0 +1,62 @@
+<m-portlet [options]="{enableSticky: true}">
+	<!-- use ng-container[mPortletHeadTitle] for the title -->
+	<ng-container mPortletHeadTitle>
+		<div class="m-portlet__head-title">
+			<h3 class="m-portlet__head-text" text-primary>
+				Contant Person's Details
+			</h3>
+		</div>
+	</ng-container>
+
+	<!-- use ng-container[mPortletHeadTools] for the top right toolbar content -->
+	
+	<!-- use ng-container[mPortletBody] for the body content -->
+	<ng-container mPortletBody>
+		<form class="m-form m-form--label-align-left- m-form--state-" id="m_form">
+			<!--begin: Form Body -->
+			<div class="m-portlet__body">
+				<div class="row">
+					<div class="col-xl-12">
+						<!-- <div class="m-form__section m-form__section--first"> -->
+							<div class="form-group m-form__group row">
+								<label class="col-xl-3 col-lg-3 col-form-label">*Name of the Contant Person:</label>
+								<div class="col-xl-9 col-lg-9">
+									<input type="text" name="name" class="form-control m-input" placeholder="" value="Nick Stone">
+									<span class="m-form__help">Please enter your Store name</span>
+								</div>
+							</div>
+							<div class="form-group m-form__group row">
+								<label class="col-xl-3 col-lg-3 col-form-label">*Phone No./Toll Free No.:</label>
+								<div class="col-xl-9 col-lg-9">
+									<input type="email" name="email" class="form-control m-input" placeholder="" value="nick.stone@gmail.com">
+									<!-- <span class="m-form__help">We'll never share your email with anyone else</span> -->
+								</div>
+							</div>
+							<div class="form-group m-form__group row">
+								<label class="col-xl-3 col-lg-3 col-form-label">* Mobile No:</label>
+								<div class="col-xl-9 col-lg-9">
+									<div class="input-group">
+										<div class="input-group-prepend">
+											<span class="input-group-text">
+												<i class="la la-phone"></i>
+											</span>
+										</div>
+										<input type="text" name="phone" class="form-control m-input" placeholder="" value="1-541-754-3010">
+									</div>
+									<!-- <span class="m-form__help">Enter your valid phone in US phone format. E.g: 1-541-754-3010</span> -->
+								</div>
+							</div>
+							<div class="form-group m-form__group row">
+								<label class="col-xl-3 col-lg-3 col-form-label">* Email ID:</label>
+								<div class="col-xl-9 col-lg-3">
+									<input type="email" name="email" class="form-control m-input" placeholder="" value="nick.stone@gmail.com">
+									<!-- <span class="m-form__help">We'll never share your email with anyone else</span> -->
+								</div>
+							</div>
+						</div>
+					<!-- </div> -->
+				</div>
+			</div>
+		</form>
+	</ng-container>
+</m-portlet>

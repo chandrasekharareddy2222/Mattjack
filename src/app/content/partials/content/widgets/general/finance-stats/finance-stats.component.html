@@ -1,0 +1,32 @@
+<m-portlet [options]="{headOverlay: true}">
+	<!-- use ng-container[mPortletHeadTitle] for the title -->
+	<ng-container mPortletHeadTitle>
+		<div class="m-portlet__head-title">
+			<h3 class="m-portlet__head-text m--font-light">
+				Finance Stats
+			</h3>
+		</div>
+	</ng-container>
+
+
+	<!-- use ng-container[mPortletBody] for the body content -->
+	<ng-container mPortletBody>
+		<div class="m-widget28">
+			<!-- <div class="m-widget28__pic m-portlet-fit--sides"></div> -->
+			<div class="m-widget28__container">
+				
+				<!-- begin::Tab Content -->
+				<div class="m-widget28__tab tab-content">
+					<div id="menu11" class="m-widget28__tab-container tab-pane active">
+						<!-- <agm-map latitude]="lat" [longitude]="lng">
+							<agm-marker [latitude]="lat" [longitude]="lng"></agm-marker>
+						  </agm-map> -->
+						<div #gmap style="width:100%;height:400px"></div>
+					</div>
+					
+				</div>
+				<!-- end::Tab Content -->
+			</div>
+		</div>
+	</ng-container>
+</m-portlet>

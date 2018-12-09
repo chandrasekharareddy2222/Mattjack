@@ -1,0 +1,100 @@
+<h2>Add/Edit Bundle Product</h2>
+<m-notice>
+  Bundle Product literally means the combination of various existing of your Webstore in to a single product.
+  Assembled Desktop,Party wear,gift basket are some examples of a Bundle Product. You can create different groups
+  map suitable products to them, which can be selected by end-users while buying customized version of Bundle Product.
+  Price and weight of the bundle product can be configured either fixed or based on the selected items(i.e.dynamic).
+</m-notice>
+  
+<m-portlet>
+    <ng-container mPortletHeadTitle>
+        <div class="m-portlet__head-title">
+          <h3 class="m-portlet__head-text">
+            Price
+          </h3>
+        </div>
+      </ng-container>
+  <ng-container mPortletBody>
+      <form class="m-form m-form--label-align-left- m-form--state-" id="m_form">
+        <div class="m-portlet__body">
+          <div class="row">
+            <div class="col-xl-12">
+        <div class="m-form__section m-form__section--first">
+              <div class="form-group m-form__group row">
+                <label class="col-xl-3 col-lg-3 col-form-label">Active From:</label>
+                 <div class="col-xl-6 col-lg-6">
+                    <div class="input-group">
+                    <input class="form-control" placeholder="yyyy-mm-dd" name="dp"  ngbDatepicker #d="ngbDatepicker">
+                    <div class="input-group-append">
+                      <button class="btn btn-primary" (click)="d.toggle()" type="button">
+                        <i class="la la-calendar"></i>
+                      </button>
+                    </div>
+                  </div>
+                  </div>
+                </div>
+                <mat-divider></mat-divider>
+                <div class="form-group m-form__group row">
+                    <label class="col-xl-3 col-lg-3 col-form-label">Active To:</label>
+                     <div class="col-xl-6 col-lg-6">
+                        <div class="input-group">
+                        <input class="form-control" placeholder="yyyy-mm-dd" name="dp"  ngbDatepicker #d="ngbDatepicker">
+                        <div class="input-group-append">
+                          <button class="btn btn-primary" (click)="d.toggle()" type="button">
+                            <i class="la la-calendar"></i>
+                          </button>
+                        </div>
+                      </div>
+                      </div>
+                    </div>
+          </div>
+                     </div>
+                     </div>             
+          </div>
+          <div class="m-portlet__foot m-portlet__foot--fit">
+              <div class="m-form__actions m-form__actions pull-right">
+                  <a href="#" class="btn btn-secondary m-btn m-btn--icon m-btn--wide m-btn--md m--margin-right-10">
+                      <span>
+                        <i class="la la-arrow-left"></i>
+                        <span>Back</span>
+                      </span>
+                    </a>
+                    <div class="btn-group">
+                        <button type="button" class="btn btn-default m-btn m-btn--icon m-btn--wide m-btn--md">
+                          <span>
+                            <!-- <i class="la la-check"></i> -->
+                            <span>Reset</span>
+                          </span>
+                        </button>   
+                      </div>
+                      <div class="btn-group">
+                          <button type="button" class="btn btn-default  m-btn m-btn--icon m-btn--wide m-btn--md">
+                            <span>
+                              <!-- <i class="la la-check"></i> -->
+                              <span>Delete</span>
+                            </span>
+                          </button>   
+                        </div>
+                        <div class="btn-group">
+                            <button type="button" class="btn btn-default m-btn m-btn--icon m-btn--wide m-btn--md">
+                              <span>
+                                <!-- <i class="la la-check"></i> -->
+                                <span>Save</span>
+                              </span>
+                            </button>   
+                          </div>
+                          <div class="btn-group">
+                              <button type="button" class="btn btn-accent  m-btn m-btn--icon m-btn--wide m-btn--md">
+                                <span>
+                                  <!-- <i class="la la-check"></i> -->
+                                  <span>Save And Continue Edit</span>
+                                </span>
+                              </button>   
+                            </div>
+              </div>
+            </div>
+      </form>    
+    </ng-container>    
+  </m-portlet>        
+
+

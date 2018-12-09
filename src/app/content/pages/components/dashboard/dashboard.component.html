@@ -1,0 +1,119 @@
+<h2>Dashboard</h2>
+<m-notice>
+	Dashboard helps to glance at the imperative information of your store as well as that
+	of your conneted market places very conveninently.You can view the updates on 'Order Trends',
+	'visitor Trends','Top Categories by sales','Top Categories by Products','Not Delivered Orders',
+	Not Picked Orders,Not Delivered Orders, etc...here you can also find Alerts(i.e.System Alters/
+	Messages) and Announcements(i.e. Announcements/Notifications) here whenever they are generated/announced.	
+</m-notice>
+<!--Begin::Section-->
+<div class="m-portlet">
+	<div class="m-portlet__body m-portlet__body--no-padding">
+		<div class="row m-row--no-padding m-row--col-separator-xl">
+			<!-- <div class="col-xl-4">
+				<m-stat></m-stat>
+			</div> -->
+			<div class="col-xl-12">
+				<ngb-accordion #acc33="ngbAccordion" activeIds="config-panel-one" [closeOthers]="'true'" [type]="'info'">
+					<ngb-panel id="config-panel-one">
+						<ng-template ngbPanelTitle>
+							<span class="card-header--title">Order Trends</span>
+						</ng-template>
+						<ng-template ngbPanelContent>
+								<m-line-chart></m-line-chart>
+						</ng-template>
+					</ngb-panel>
+				</ngb-accordion>		
+			</div>
+		</div>
+	</div>
+</div>
+<!--End::Section-->
+
+<!--Begin::Section-->
+<div class="m-portlet">
+	<div class="m-portlet__body m-portlet__body--no-padding">
+		<div class="row m-row--no-padding m-row--col-separator-xl">
+			<!-- <div class="col-xl-4">
+				<m-stat></m-stat>
+			</div> -->
+			<div class="col-xl-12">
+				<ngb-accordion #acc33="ngbAccordion" activeIds="config-panel-one" [closeOthers]="'true'" [type]="'info'">
+					<ngb-panel id="config-panel-one">
+						<ng-template ngbPanelTitle>
+							<span class="card-header--title">Visitor Trends</span>
+						</ng-template>
+						<ng-template ngbPanelContent>
+								<m-line-chart></m-line-chart>
+						</ng-template>
+					</ngb-panel>
+				</ngb-accordion>		
+			</div>
+		</div>
+	</div>
+</div>
+<!--End::Section-->
+
+<!--Begin::Section-->
+<div class="row">
+	<div class="col-xl-6">
+		<ngb-accordion #acc33="ngbAccordion" activeIds="config-panel-t" [closeOthers]="'true'" [type]="'info'">
+			<ngb-panel id="config-panel-t">
+				<ng-template ngbPanelTitle>
+					<span class="card-header--title">Top Categories by Sale</span>
+				</ng-template>
+				<ng-template ngbPanelContent>
+					<m-doughnut-chart></m-doughnut-chart>
+				</ng-template>
+			</ngb-panel>
+		</ngb-accordion>
+		<!-- <m-doughnut-chart></m-doughnut-chart> -->
+	</div>
+	<div class="col-xl-6">
+		<ngb-accordion #acc33="ngbAccordion" activeIds="config-panel-tt" [closeOthers]="'true'" [type]="'info'">
+			<ngb-panel id="config-panel-tt">
+				<ng-template ngbPanelTitle>
+					<span class="card-header--title">Top Categories by Products</span>
+				</ng-template>
+				<ng-template ngbPanelContent>
+					<!-- <m-doughnut-chart></m-doughnut-chart> -->
+				</ng-template>
+			</ngb-panel>
+		</ngb-accordion>
+		<!-- <m-support-tickets></m-support-tickets> -->
+	</div>
+</div>
+<!--End::Section-->
+
+<!--Begin::Section-->
+<!-- <div class="row">
+	<div class="col-xl-6">
+		<m-recent-activities></m-recent-activities>
+	</div>
+	<div class="col-xl-6">
+		<m-recent-notifications></m-recent-notifications>
+	</div>
+</div> -->
+<!--End::Section-->
+
+<!--Begin::Section-->
+<!-- <div class="row">
+	<div class="col-xl-8">
+		<m-data-table></m-data-table>
+	</div>
+	<div class="col-xl-4">
+		<m-audit-log></m-audit-log>
+	</div>
+</div> -->
+<!--End::Section-->
+
+<!--Begin::Section-->
+<!-- <div class="row">
+	<div class="col-xl-8">
+		<m-best-seller></m-best-seller>
+	</div>
+	<div class="col-xl-4">
+		<m-author-profit></m-author-profit>
+	</div>
+</div> -->
+<!--End::Section-->
